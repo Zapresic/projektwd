@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="new 2.css">
+<link rel="icon" type="image/png" href="img/Zoo_logo.png">
+<style>
+</style>
+<title >Zoo</title>
+</head>
+
+<body align="center">
+<div class="logo"><a href = "Zoo.html"><img src ="img/Zoo_logo.png" width="7%" height="7%" align="left"></a>
+<div class="topnav">
+  <a href="Zoo.html">Početna</a>
+  <a href="morz.html">Morž</a>
+  <a href="Kapibara.html">Kapibara</a>
+  <a href="snjezna_sova.html">Snježna sova</a>
+  <a href="o_nama.html">O nama</a>
+</div>
+
+<div class="slideshow-container">
+<div class="mySlides fade"><a href = "Zoo.html">
+  <img src="img/Zoo.png" width="100%" height="100%"></a>
+</div>
+
+<div class="mySlides fade"><a href = "morz.html">
+  <img src="img/moržp.png" width="100%" height="100%"></a>
+</div>
+
+<div class="mySlides fade"><a href = "kapibara.html">
+  <img src="img/kapibara.png" width="100%" height="100%"></a>
+</div>
+
+<div class="mySlides fade"><a href = "snjezna_sova.html">
+  <img src="img/sova.png" width="100%" height="100%"></a>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<table style="border:3px solid black;border-collapse:collapse;" width="100%" height="100%">
+  <tr>
+    <th style="border:3px solid black;border-collapse:collapse;" width="20%"></th>
+    <th style="border:3px solid black;border-collapse:collapse;" width="20%"></th>
+    <th style="border:3px solid black;border-collapse:collapse;" width="20%"></th>
+    <th style="border:3px solid black;border-collapse:collapse;" width="20%"></th>
+    <th style="border:3px solid black;border-collapse:collapse;" width="20%"></th>
+  </tr>
+</table>
+
+<br>
+
+
+<h2> KRATKA POVIJEST PARKA </h2>
+<p> Zoo park osnovan je 1975.g, a osnovale su ga dvije sestre Sigma i Ligma Balzić.
+<br> Sigma i Ligma su htjele podijeliti svoju ljubav prema životinnjama sa cijelom hrvatskom.
+<br> Godinama su putovale i primale bolesne životinje u park <br> i tako im pomogle i omogućile ljudima da vide razne životinje od malih insekata do velikog slona.
+<br> Park je kroz godine primio i njegovao puno životinja od kojih su najpopularniji kapibara, morž i sniježna sova.
+<br> Ako vas zanima više i detaljnije o našoj povijesti, slobodno posjetite naš mini muzej <br> ili pročitajte brošuru koja se nalazi kod ulaza.
+<br>Pozivamo vas sve da nam se pridružite u proučavanju i upoznavanju životinja iz mnogih krajeva svijeta!</br><p>
+<img src="img/kapylove.png" alt="dobrodošli<3" width="25%" height="25%">
+<br>
+</br>
+<hr>
+
+
+<!-- Jurić dio -->
+<h2> CIJENE </h2>
+<table border="3" width="500" height="300" align="center">
+  <tr>
+    <th  width="375" colspan="5">ODRASLI</th>
+	<tr>
+	    <td align="center"> 3.5 EUR </td>
+	</tr>
+    <th  width="375" colspan="5">DJECA OD 7-14 GOD</th>
+	<tr>
+	    <td align="center"> 3 EUR </td>
+	</tr>
+    <th width="375" colspan="5">DJECA OD 7-14 GOD</th>
+	<tr>
+	    <td align="center"> 2.5 EUR </td>
+	</tr>
+    <th  width="375" colspan="5">ŠKOLSKE GRUPE</th>
+	<tr>
+	    <td align="center"> 2 EUR </td>
+	</tr>
+    <th width="375" colspan="5">VRTIĆKE GRUPE</th>
+	<tr>
+	    <td align="center"> 1.5 EUR </td>
+	</tr>
+  </tr>
+</table>
+<br>
+</br>
+<hr>
+
+<!-- Žnidarić dio -->
+<h2 align="center"> RADNO VRIJEME </h2>
+<p align="center"><b>Otvoreni smo svaki dan!</b></p>
+<table align="center" border="3" width="500" height="200">
+	<tr>
+		<th width="30%">Blagajna</td>
+		<td width="30%" align="center">9:00 – 15:00 sati</td>
+    </tr>
+	<tr>
+		<th width="30%">Zoološki vrt</td>
+		<td width="30%" align="center">9:00 – 20:00 sati</td>
+	</tr>
+</table>
+<p align="center"><b>U Zoološki vrt moguće je ući isključivo za vrijeme rada blagajni, a nakon zatvaranja blagajni iz Vrta je moguće izaći samo kroz glavni ulaz.
+					<br>
+					   ULAZ I IZLAZ PETKOM, SUBOTOM I NEDJELJOM  IZA 15:00 SATI ISKLJUČIVO JE NA GLAVNOJ BLAGAJNI.
+</b></p>
+<br>
+</br>
+<hr>
+<h2 align="center"> PRAVILA PONAŠANJA </h2>
+<p align="center"><b>Kupnjom ulaznice posjetitelji prihvaćaju pravila ponašanja u Zoološkom vrtu.
+					<br>
+					Nepridržavanje povlači za sobom posljedice i obvezu naknade nastale štete prema zakonskim odredbama.
+</br></b></p>
+<br>
+</br>
+<p align="center"><b>Ulaznice je potrebno čuvati tijekom posjeta vrtu.</b> Našim službenicima dopuštena je kontrola ulaznica. Na njihov zahtjev ulaznica se mora pokazati.</p>
+<p align="center"><img src="img/ziv.png" alt="Zabranjen ulazak kućnih ljubimaca" align="center" align="left" width="50" height="50"> Životinje i objekti Zoološkog vrta služe na radost svim posjetiteljima.<br>
+U općem je interesu da se životinje pazi, a objekte ne oštećuje.<br>Nije dopušten ulazak s kućnim ljubimcima.</br></p>
+<p align="center"><img src="img/bic.png" alt="Zabranjen unos bicikla i sl. " align="center" width="50" height="50" > Bicikli, saonice, koturaljke i slično ne smiju se unositi u Zoološki vrt,<br> kao ni druge stvari koje mogu povrijediti ljude ili uznemiravati životinje.</br></p>
+<p align="center"><img src="img/hrana.png" alt="Zabranjeno hranjenje životinja" align="center" width="50" height="50"> Posjetiteljima je strogo zabranjeno hranjenje životinja Zoološkog vrta.<br>Hranjenjem životinja možete naštetiti njihovu zdravlju!</br></p>
+<p align="center"><img src="img/cam.png" alt="Upotrebljavanje audio i videozapisa samo u vlastite svrhe" align="center" width="50" height="50"> Audiosnimke i videozapisi iz Zoološkog vrta smiju se <br> upotrebljavati samo u vlastite/privatne svrhe.<br> 
+Snimke i fotografije ne smiju se upotrijebiti u komercijalne <br> i druge svrhe bez dopuštenja Zoološkog vrta.</br>
+<p align="center"><b>U slučaju da ste pronašli osobne stvari koje nisu vaše vlasništvo, molimo vas da ih dostavite djelatnicima blagajne Zoološkog vrta.<br> 
+Jednako tako, ukoliko želite prijaviti gubitak osobnih stvari na prostoru Zoološkog vrta, to možete učiniti na blagajni Zoološkog vrta.</br></b></p>
+<br>
+</br>
+
+<marquee direction="right" 
+ behavior="alternate" >
+ <img src="img/Zoo_logo.png" alt="Zoo" width="200" height="100">
+ </marquee>
+<hr>
+<footer>
+	<table>
+		<tr> Adresa: Nebeska ulica 5, Mars ||||</tr>
+		<tr> Tel: +385 (1) 3358 552 |||| </tr>
+		<tr> E-mail: info@sigmaligma.hr ||||</tr>
+	</table>
+		
+</footer>
+<br>
+</br>
+ 
+
+</body>
+</html>
